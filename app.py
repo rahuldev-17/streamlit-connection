@@ -19,8 +19,9 @@ conn = weaviateConnection("weaviate", type=weaviateConnection, url=url, api_key=
 st.title("App to Bring Questions from weaviate Database")
 st.caption("This is a minimalist streamlit application to showcase the implemented database connection class for vector database weaviate.")
 st.markdown('The data was populated in the weaviate data base following [this tutorial](https://weaviate.io/developers/weaviate/quickstart).' )
+st.markdown('The code for the application is available at [GitHub](https://github.com/rahuldev-17/streamlit-connection.git).')
 
-st.caption("Select the input from the sidebar form, and press the `Questions` button.")
+st.subheader("Select the input from the sidebar form, and press the `Questions` button.")
 
 with st.sidebar.form('input'):
     concept = st.selectbox('concepts', ('Physics', 'Biology','Chemistry'  ))
